@@ -41,6 +41,9 @@ function sendList(){
         return sendList();
     }
 
+    shuffle($list);
+    $list = array_slice($list, 0, 20);
+
     return json_encode($list);
 }
 
